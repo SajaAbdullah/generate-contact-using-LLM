@@ -1,13 +1,15 @@
 """ functions handle local file reading and writing"""
+import base64
+from io import BytesIO
 import re
 import urllib
 from json import JSONEncoder, dump, load
+import tempfile
 
 import cv2
 import numpy
+import requests
 from PIL import Image
-
-from ai_models_services import GPT4_CLIENT
 
 
 class MyEncoder(JSONEncoder):
@@ -69,17 +71,26 @@ class AiInputDataFormat:
 JSON_ENCODER_DECODER = JSONEncoderDecoder
 
 
-class OPENCV2:
+class ImageServices:
+
 
     @classmethod
-    def crop_image(cls, image_url, coordinates):
-        # Load the image from URL
-        print("crop_image")
-        print("image_url", image_url)
-        image = urllib.request.urlopen(image_url)
-        image_array = numpy.asarray(bytearray(image.read()), dtype=numpy.uint8)
-        image = cv2.imdecode(image_array, -1)
+    def encode_image_to_base64(cls, image_path):
+        with open(image_path, "rb") as f:
+            base64_image = base64.b64encode(f.read()).decode("utf-8")
+        return base64_image
 
+    @classmethod
+    def fix_image_colors_pil(cls, image):
+        # Convert OpenCV image to PIL image
+        pil_image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+
+        return pil_image
+
+    @classmethod
+    def crop_image_opencv(cls, image_path, coordinates):
+        # Load the image from local file using OpenCV
+        image = cv2.imread(image_path)
         # Extract crop coordinates
         left, top, width, height = coordinates
         h, w, _ = image.shape
@@ -90,12 +101,20 @@ class OPENCV2:
 
         # Crop the image
         cropped_image = image[top_pixel:top_pixel + height_pixel, left_pixel:left_pixel + width_pixel]
-        pil_image = Image.fromarray(cropped_image)
+        fixed_image_pil = cls.fix_image_colors_pil(cropped_image)
+        fixed_image_pil.show()
+        return fixed_image_pil
 
-        return pil_image
+    @classmethod
+    def download_image(cls, url, temp_dir):
+        response = requests.get(url)
+        temp_file = tempfile.NamedTemporaryFile(delete=False, dir=temp_dir, suffix=".jpeg")
+        temp_file.write(response.content)
+        temp_file.close()
+        return temp_file.name
 
 
-OPEN_CV2 = OPENCV2()
+IMAGE_SERVICE = ImageServices()
 
 
 def get_object_key(url):

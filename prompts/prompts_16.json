@@ -1,0 +1,11 @@
+{
+  "grade": "General Science 5",
+  "subject": "General Science",
+  "question_types": [
+    "fill in the blanks",
+    "multiple choices",
+    "true / false",
+    "short answer question",
+    "long answer question"
+  ]
+}

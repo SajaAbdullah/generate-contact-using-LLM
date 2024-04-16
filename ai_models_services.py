@@ -5,7 +5,8 @@ import boto3
 import openai
 from dotenv import find_dotenv, load_dotenv
 
-from llm_response_validattion import AWS_RESPONSE_VALIDATION
+from llm_response_validation import AWS_RESPONSE_VALIDATION
+from utils import IMAGE_SERVICE
 
 _ = load_dotenv(find_dotenv())
 
@@ -49,29 +50,45 @@ class GPT4Client:
 
         gpt_model = "gpt-4-1106-preview"
         message = [{"type": "text", "text": prompt}]
-        print("message", message)
+        # print("message", message)
         return cls.call_gpt(messages=message, model=gpt_model, json_format=True)
 
     @classmethod
-    def get_gpt_4_vision(cls, prompt_text: str, images_links: list):
+    def get_gpt_4_vision(cls, prompt_text: str, image_source: str, exercises_pages_temp_file=None, images_links: list=None):
 
+        if exercises_pages_temp_file is None:
+            exercises_pages_temp_file = []
         if not prompt_text:
             raise ValueError("Prompt is empty")
 
-        if not images_links:
-            raise ValueError("No image URL is empty")
-
         message = [{"type": "text", "text": prompt_text}]
-        for image in images_links:
-            message.append(
-                {
-                    "type": "image_url",
-                    "image_url": {
-                        "url": f"{image}",
-                    },
-                }
-            )
-        print("message", message)
+
+        if image_source == "link":
+            for image_link in images_links:
+                message.append(
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": image_link,
+                        },
+                    }
+                )
+        else:
+            if not exercises_pages_temp_file:
+                raise ValueError("No image URL is empty")
+
+            for page_no, image_path in exercises_pages_temp_file.items():
+                base64_image = IMAGE_SERVICE.encode_image_to_base64(image_path)
+                message.append(
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}",
+                            "detail": "high",
+                        },
+                    }
+                )
+
         return cls.call_gpt(model="gpt-4-vision-preview", messages=message)
 
 
@@ -100,22 +117,20 @@ class AWSClient:
     )
 
     @classmethod
-    def get_figures_coordinates(cls, s3_object_key):
-        print("s3_object_key", s3_object_key)
+    def get_figures_coordinates(cls, img_path):
+        with open(img_path, 'rb') as file:
+            img_bytes = file.read()
 
         response = cls.TEXTRACT_CLIENT.analyze_document(
             Document={
-                'S3Object': {
-                    'Bucket': cls.BOOKMAPPING_IMAGES_BUCKET,
-                    'Name': s3_object_key
-                }
+                'Bytes': img_bytes
             },
+
             FeatureTypes=[
                 'LAYOUT',
             ]
         )
 
-        # print("Textract job response", response)
         return AWS_RESPONSE_VALIDATION.get_valid_figures_layout(response)
 
 
@@ -135,5 +150,6 @@ class AWSClient:
         image_url = f"https://{cls.BOOKMAPPING_IMAGES_BUCKET}.s3.{cls.AWS_REGION}.amazonaws.com/{image_key}"
 
         return image_url
+
 
 AWS_TEXTRACT_CLIENT = AWSClient
