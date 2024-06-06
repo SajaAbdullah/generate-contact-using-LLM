@@ -31,7 +31,7 @@ class GPT4Client:
                     model=model,
                     messages=messages,
                     max_tokens=4096,
-                    response_format={"type": "json_object"}
+                    response_format={"type": "json_object"},
                 )
             else:
                 response = cls.CLIENT.chat.completions.create(
@@ -44,17 +44,22 @@ class GPT4Client:
         return response.choices[0].message.content
 
     @classmethod
-    def get_gpt_4_1106_preview(cls, prompt: str):
+    def get_gpt_4_1106_preview(cls, prompt: str, json_format=True):
         if not prompt:
             raise ValueError("Prompt is empty")
 
         gpt_model = "gpt-4-1106-preview"
         message = [{"type": "text", "text": prompt}]
-        # print("message", message)
-        return cls.call_gpt(messages=message, model=gpt_model, json_format=True)
+        return cls.call_gpt(messages=message, model=gpt_model, json_format=json_format)
 
     @classmethod
-    def get_gpt_4_vision(cls, prompt_text: str, image_source: str, exercises_pages_temp_file=None, images_links: list=None):
+    def get_gpt_4_vision(
+        cls,
+        prompt_text: str,
+        image_source: str,
+        exercises_pages_temp_file=None,
+        images_links: list = None,
+    ):
 
         if exercises_pages_temp_file is None:
             exercises_pages_temp_file = []
@@ -104,10 +109,10 @@ class AWSClient:
         print("No AWS API Key provided")
 
     TEXTRACT_CLIENT = boto3.client(
-        'textract',
+        "textract",
         aws_access_key_id=AWS_ACCESS_KEY,
         aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
-        region_name=AWS_REGION
+        region_name=AWS_REGION,
     )
 
     S3_CLIENT = boto3.client(
@@ -118,21 +123,17 @@ class AWSClient:
 
     @classmethod
     def get_figures_coordinates(cls, img_path):
-        with open(img_path, 'rb') as file:
+        with open(img_path, "rb") as file:
             img_bytes = file.read()
 
         response = cls.TEXTRACT_CLIENT.analyze_document(
-            Document={
-                'Bytes': img_bytes
-            },
-
+            Document={"Bytes": img_bytes},
             FeatureTypes=[
-                'LAYOUT',
-            ]
+                "LAYOUT",
+            ],
         )
 
         return AWS_RESPONSE_VALIDATION.get_valid_figures_layout(response)
-
 
     @classmethod
     def upload_image_to_aws(cls, image, image_key):
@@ -145,7 +146,6 @@ class AWSClient:
                 image_path,
                 cls.BOOKMAPPING_IMAGES_BUCKET,
                 image_key,
-
             )
         image_url = f"https://{cls.BOOKMAPPING_IMAGES_BUCKET}.s3.{cls.AWS_REGION}.amazonaws.com/{image_key}"
 

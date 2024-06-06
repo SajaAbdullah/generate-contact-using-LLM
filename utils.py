@@ -1,15 +1,14 @@
 """ functions handle local file reading and writing"""
 import base64
-from io import BytesIO
 import re
-import urllib
-from json import JSONEncoder, dump, load
 import tempfile
 
+from json import JSONEncoder, dump, load
+
 import cv2
-import numpy
 import requests
 from PIL import Image
+
 
 
 class MyEncoder(JSONEncoder):
@@ -72,8 +71,6 @@ JSON_ENCODER_DECODER = JSONEncoderDecoder
 
 
 class ImageServices:
-
-
     @classmethod
     def encode_image_to_base64(cls, image_path):
         with open(image_path, "rb") as f:
@@ -100,7 +97,9 @@ class ImageServices:
         height_pixel = int(height * h)
 
         # Crop the image
-        cropped_image = image[top_pixel:top_pixel + height_pixel, left_pixel:left_pixel + width_pixel]
+        cropped_image = image[
+            top_pixel : top_pixel + height_pixel, left_pixel : left_pixel + width_pixel
+        ]
         fixed_image_pil = cls.fix_image_colors_pil(cropped_image)
         fixed_image_pil.show()
         return fixed_image_pil
@@ -108,7 +107,9 @@ class ImageServices:
     @classmethod
     def download_image(cls, url, temp_dir):
         response = requests.get(url)
-        temp_file = tempfile.NamedTemporaryFile(delete=False, dir=temp_dir, suffix=".jpeg")
+        temp_file = tempfile.NamedTemporaryFile(
+            delete=False, dir=temp_dir, suffix=".jpeg"
+        )
         temp_file.write(response.content)
         temp_file.close()
         return temp_file.name

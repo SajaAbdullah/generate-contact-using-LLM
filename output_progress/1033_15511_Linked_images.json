@@ -1,0 +1,192 @@
+[
+    {
+        "question_statement": "Many plants produce fruits to:",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "29",
+        "answer_options": [
+            "protect seed",
+            "produce food for the seed",
+            "store water for the seed germination",
+            "stop seed from germination"
+        ]
+    },
+    {
+        "question_statement": "Which part of plant is absent in non-flowering plants?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "29",
+        "answer_options": [
+            "root",
+            "seed",
+            "fruit",
+            "leaf"
+        ]
+    },
+    {
+        "question_statement": "Which one of the following is a non-flowering plant?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "29",
+        "answer_options": [
+            "apple",
+            "rose",
+            "mango",
+            "pine"
+        ]
+    },
+    {
+        "question_statement": "In the given picture of the flower, which are the female reproductive parts of a flower?",
+        "image_based_question": true,
+        "question_image": "The image shows a diagram of a flower cross-section indicating different parts of the flower. The parts are labeled A to D and one can see the petals, reproductive organs, and sepals. The diagram illustrates a typical bisected flower with labels indicating specific parts for identification, with the focus on the female reproductive structures.",
+        "question_type": "Multiple choice question",
+        "question_page_number": "29",
+        "answer_options": [
+            "B, C and D",
+            "A, B and D",
+            "A, B and C",
+            "A, C and D"
+        ],
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_29.1"
+    },
+    {
+        "question_statement": "Which conditions are necessary for seed germination?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "water, soil, air, darkness",
+            "air, water, light",
+            "water, temperature, air",
+            "temperature, soil, light"
+        ]
+    },
+    {
+        "question_statement": "Which profession is associated with plants?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "zoologist",
+            "dentist",
+            "botanist",
+            "artist"
+        ]
+    },
+    {
+        "question_statement": "Pollen grains are produced inside the:",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "stamen",
+            "carpel",
+            "anther",
+            "petal"
+        ]
+    },
+    {
+        "question_statement": "In order to attract insects for pollination petals are:",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "brightly coloured",
+            "many in number",
+            "protected by sepals",
+            "large in size"
+        ]
+    },
+    {
+        "question_statement": "In plants water and minerals are taken up by:",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "leaves",
+            "stem",
+            "roots",
+            "root hairs"
+        ]
+    },
+    {
+        "question_statement": "Loss of water from plants in the form water vapour is called:",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Multiple choice question",
+        "question_page_number": "30",
+        "answer_options": [
+            "transpiration",
+            "pollination",
+            "reproduction",
+            "evaporation"
+        ]
+    },
+    {
+        "question_statement": "Write any two differences between flowering and non-flowering plants.",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Short answer question",
+        "question_page_number": "30",
+        "answer_options": []
+    },
+    {
+        "question_statement": "Give two examples of flowering and non-flowering plants.",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Short answer question",
+        "question_page_number": "30",
+        "answer_options": []
+    },
+    {
+        "question_statement": "How transportation of water takes place in plants?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Short answer question",
+        "question_page_number": "30",
+        "answer_options": []
+    },
+    {
+        "question_statement": "Differentiate between self-pollination and cross pollination?",
+        "image_based_question": false,
+        "question_image": "",
+        "question_type": "Short answer question",
+        "question_page_number": "30",
+        "answer_options": []
+    },
+    {
+        "question_statement": "Label the given diagram.",
+        "image_based_question": true,
+        "question_image": "The image shows a diagram of a flower with various parts outlined for labeling. There is a large central petal structure with smaller structures around it. Filaments and anthers are visible, as are labelled lines pointing to different components expected to be identified.",
+        "question_type": "Short answer question",
+        "question_page_number": "30",
+        "answer_options": [],
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_30.1"
+    },
+    {
+        "image_based_question": true,
+        "question_statement": "Observe the given pictures. What is the role of water in seed germination?",
+        "question_image": "Three images of petri dishes, each containing soil and sprouting seeds. The first is labeled 'Plain water', the second 'Water with salts', and the third 'Water with sugar'. A fourth image shows a petri dish labeled 'Water with vinegar', with no sprouting visible.",
+        "question_type": "constructed response",
+        "question_page_number": 31,
+        "sub_questions": [],
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_31.1"
+    },
+    {
+        "image_based_question": true,
+        "question_statement": "Observe the given pictures. For which type of pollination, the shapes and structures of flowers are suitable?",
+        "question_image": "Six images depicting flowers and pollination. The first row shows three flowers with bees pollinating them. The second row has three different flowers, each showing certain structural traits that might facilitate certain types of pollination.",
+        "question_type": "constructed response",
+        "question_page_number": 31,
+        "sub_questions": [],
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_31.3"
+    }
+]

@@ -1,0 +1,250 @@
+[
+    {
+        "question_statement": "What is an ecosystem?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "68",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) system of non-living things in an environment.",
+            "(B) area having a group of living and dead things.",
+            "(C) system of living things in an environment.",
+            "(D) the collection of living and non-living components in an area."
+        ],
+        "correct_answer": "(D) the collection of living and non-living components in an area."
+    },
+    {
+        "question_statement": "Study of relationship of organisms to their environment is:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "68",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) ecology",
+            "(B) ecosystem",
+            "(C) habitat",
+            "(D) migration"
+        ],
+        "correct_answer": "(A) ecology"
+    },
+    {
+        "question_statement": "The actual place where an organism lives is:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "68",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) environment",
+            "(B) habitat",
+            "(C) water",
+            "(D) land"
+        ],
+        "correct_answer": "(B) habitat"
+    },
+    {
+        "question_statement": "Animals hibernate to:",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "68",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) store energy",
+            "(B) store food",
+            "(C) store water",
+            "(D) sleep"
+        ],
+        "correct_answer": "(D) sleep"
+    },
+    {
+        "question_statement": "Which adaptations in camels do not protect them from their sandy habitat?",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) a double row of long eye lashes",
+            "(B) bushy eyebrows",
+            "(C) which can also nose",
+            "(D) a long neck"
+        ],
+        "correct_answer": "(D) a long neck"
+    },
+    {
+        "question_statement": "Which of the following characteristics help the cactus survive with little rainfall?",
+        "question_tag": "apply",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) green stem",
+            "(B) colourful flower",
+            "(C) a shallow, wide spread root system",
+            "(D) large leaves."
+        ],
+        "correct_answer": "(C) a shallow, wide spread root system"
+    },
+    {
+        "question_statement": "Hibernating animals are found:",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) under water",
+            "(B) in cold places",
+            "(C) in hot places",
+            "(D) in oceans"
+        ],
+        "correct_answer": "(B) in cold places"
+    },
+    {
+        "question_statement": "Which animal has a thick coat of fur and a layer of far under its skin which protects it from the cold?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) snakes",
+            "(B) squirrel",
+            "(C) camel",
+            "(D) polar bear"
+        ],
+        "correct_answer": "(D) polar bear"
+    },
+    {
+        "question_statement": "Native places where animals live is called:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) habitat",
+            "(B) desert",
+            "(C) home",
+            "(D) none of these"
+        ],
+        "correct_answer": "(A) habitat"
+    },
+    {
+        "question_statement": "Going too far off places to escape cold winter and returning in summer is called:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "69",
+        "sub_questions": [],
+        "answer_options": [
+            "(A) migration",
+            "(B) hibernation",
+            "(C) movement",
+            "(D) locomotion"
+        ],
+        "correct_answer": "(A) migration"
+    },
+    {
+        "question_statement": "What is an ecosystem?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "An ecosystem is a community of living organisms in conjunction with the nonliving components of their environment, interacting as a system."
+    },
+    {
+        "question_statement": "Briefly describe the ecosystem of forests, ponds, rivers, grassland and desert?",
+        "question_tag": "apply",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "Forest ecosystems are dominated by trees and support a variety of life. Pond and river ecosystems are aquatic environments with a variety of fish and plants. Grassland ecosystems feature grasses as the predominant vegetation and support a variety of animal life. Desert ecosystems have sparse vegetation and are adapted to arid conditions."
+    },
+    {
+        "question_statement": "How living things respond to environmental conditions?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "Living things respond to environmental conditions through adaptation, which allows them to survive in a particular environment. They may change their behavior, physiology, or structure to better suit their surroundings."
+    },
+    {
+        "question_statement": "Describe how plants and animals are adapted to the following environment: (A) hot (B) cold (C) wet",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "(A) In hot environments, plants may have thick leaves to retain moisture and animals might be nocturnal to avoid the heat. (B) In cold environments, animals might have thick fur and hibernate, while plants have adaptations like antifreeze proteins. (C) In wet environments, plants have broad leaves for water dispersal and animals may have waterproof coats or specialized breathing organs."
+    },
+    {
+        "question_statement": "How the following behavior help the animals to survive? (A) migration (B) hibernation",
+        "question_tag": "apply",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "(A) Migration helps animals to survive by moving them to areas with more resources or favorable climates during different seasons. (B) Hibernation allows animals to survive periods of extreme cold or food scarcity by entering a state of reduced metabolic activity."
+    },
+    {
+        "question_statement": "How urbanization and population growth can affect a habitat?",
+        "question_tag": "evaluate",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "Urbanization and population growth can lead to habitat destruction, fragmentation, and pollution, which can result in a loss of biodiversity and disruption of ecosystems."
+    },
+    {
+        "question_statement": "Explain that when a habitat changes, organisms living in it are affected as well.",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "When a habitat changes due to natural or human influence, the organisms living in it may struggle to survive if they cannot adapt to the new conditions. This can lead to reduced populations or even extinction."
+    },
+    {
+        "question_statement": "What is the relationship between biodiversity and competition among living things, in an ecosystem.",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "constructed-response",
+        "question_page_number": "70",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "Biodiversity leads to a variety of organisms in an ecosystem, each with different niches, reducing direct competition. Conversely, in less diverse ecosystems, competition can be more intense as a greater number of organisms vie for the same resources."
+    }
+]

@@ -1,0 +1,330 @@
+[
+    {
+        "question_statement": "Write any two differences between flowering and non-flowering plants.",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "30",
+        "correct_answer": "Differences include presence of flowers, seeds vs. spores, and method of reproduction.",
+        "marking_scheme": "2 marks: Award 1 mark for each correct difference.",
+        "score": "2",
+        "keywords_bank": "flowers, seeds, spores, reproduction, flowering plants, non-flowering plants"
+    },
+    {
+        "question_statement": "Give two examples of flowering and non-flowering plants.",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "30",
+        "correct_answer": "Flowering: roses, daisies. Non-flowering: ferns, mosses.",
+        "marking_scheme": "2 marks: Award 1 mark for each correct example.",
+        "score": "2",
+        "keywords_bank": "flowering, non-flowering, roses, daisies, ferns, mosses"
+    },
+    {
+        "question_statement": "How transportation of water takes place in plants?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "30",
+        "correct_answer": "Transportation occurs through xylem, using root pressure, capillary action, transpirational pull.",
+        "marking_scheme": "2 marks: Award 1 mark for mentioning xylem and 1 mark for explaining process/root pressure/capillary action/transpirational pull.",
+        "score": "2",
+        "keywords_bank": "transportation, plants, water, xylem, root pressure, capillary action, transpirational pull"
+    },
+    {
+        "question_statement": "Differentiate between self-pollination and cross pollination?",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "30",
+        "correct_answer": "Self-pollination: same flower/plant. Cross-pollination: between different plants.",
+        "marking_scheme": "2 marks: Award 1 mark for correct description of self-pollination and 1 mark for cross-pollination.",
+        "score": "2",
+        "keywords_bank": "self-pollination, cross pollination, anther, pollen, flower, same plant, different plants"
+    },
+    {
+        "question_statement": "Label the given diagram.",
+        "question_tag": "apply",
+        "image_based_question": "true",
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_30.1",
+        "question_type": "short-answer",
+        "question_page_number": "30",
+        "correct_answer": "Correct labels would be applied to diagram parts such as leaf, stem, root, flower, etc.",
+        "marking_scheme": "2 marks: Award 1 mark for each correct label, up to two labels.",
+        "score": "2",
+        "keywords_bank": "label, diagram, parts, leaf, stem, root, flower"
+    },
+    {
+        "question_statement": "Explain the water cycle and name its main stages.",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "00",
+        "correct_answer": "The water cycle consists of the evaporation of water from surface sources, condensation forming clouds, precipitation as rain or snow returning to the earth, and collection in bodies of water before repeating the cycle.",
+        "marking_scheme": "Award 0.5 mark for naming each main stage: evaporation, condensation, precipitation, collection. Award 1 mark for a correct explanation of the water cycle process.",
+        "score": "5",
+        "keywords_bank": "water cycle, evaporation, condensation, precipitation, collection, surface, clouds, rain, snow, earth, bodies of water, cycle, process, explain"
+    },
+    {
+        "question_statement": "What is photosynthesis? Name the raw materials and the products.",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "00",
+        "correct_answer": "Photosynthesis is the process by which plants make their own food using sunlight, carbon dioxide, and water to produce glucose and oxygen.",
+        "marking_scheme": "Award 1 mark for correct definition of photosynthesis. Award 2 marks for naming all raw materials and 2 marks for naming both products correctly.",
+        "score": "5",
+        "keywords_bank": "photosynthesis, plants, food, sunlight, carbon dioxide, water, glucose, oxygen, raw materials, products"
+    },
+    {
+        "question_statement": "Describe the process of germination and the conditions necessary for a seed to germinate.",
+        "question_tag": "analyze",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "long-answer",
+        "question_page_number": "00",
+        "correct_answer": "Germination is the process by which a seed sprouts into a new plant. Necessary conditions include water, oxygen, the right temperature, and sometimes light.",
+        "marking_scheme": "Award 1 mark for a correct description of germination. Award 1 mark for each necessary condition listed.",
+        "score": "5",
+        "keywords_bank": "germination, process, seed, sprouts, new plant, conditions, water, oxygen, temperature, light, necessary"
+    },
+    {
+        "question_statement": "Define a habitat and explain why different animals need different types of habitats.",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "00",
+        "correct_answer": "A habitat is the natural environment where an organism lives. Different animals need different types of habitats to provide for their specific needs, such as food, water, shelter, and space.",
+        "marking_scheme": "Award 2 marks for a correct definition of a habitat. Award 3 marks for explaining why different animals need different habitats.",
+        "score": "5",
+        "keywords_bank": "habitat, natural environment, organism, lives, animals, different, types, specific needs, food, water, shelter, space, explain"
+    },
+    {
+        "question_statement": "List three types of simple machines and give an example of each.",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "short-answer",
+        "question_page_number": "00",
+        "correct_answer": "The three types of simple machines are: lever (example: seesaw), wheel and axle (example: bicycle wheels), and inclined plane (example: ramp).",
+        "marking_scheme": "Award 1 mark for listing each simple machine and 0.5 marks for each example.",
+        "score": "5",
+        "keywords_bank": "simple machines, lever, seesaw, wheel and axle, bicycle wheels, inclined plane, ramp, list, example"
+    },
+    {
+        "question_statement": "Observe the given pictures. What is the role of water in seed germination?",
+        "question_tag": "analyze",
+        "image_based_question": "true",
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_31.1",
+        "question_type": "constructed-response",
+        "question_page_number": "31",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "Water plays a critical role in seed germination by activating enzymes that begin the growth process, breaking down food reserves for seedling development, and causing the seed to swell and break through its coat.",
+        "marking_scheme": "Award 1 mark for mentioning the activation of enzymes, 1 mark for stating the breakdown of food reserves for seedling growth, and 1 mark for explaining the process of swelling and breaking of the seed coat.",
+        "score": "3",
+        "keywords_bank": "water, critical role, activating enzymes, growth process, breaking down, food reserves, seedling development, swelling, seed coat"
+    },
+    {
+        "question_statement": "Observe the given pictures. For which type of pollination, the shapes and structures of flowers are suitable?",
+        "question_tag": "evaluate",
+        "image_based_question": "true",
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_31.3",
+        "question_type": "constructed-response",
+        "question_page_number": "31",
+        "sub_questions": [],
+        "answer_options": [],
+        "correct_answer": "The answer will depend on the shapes and structures observed, but typically certain shapes and structures suggest adaptations for attracting specific pollinators, such as birds, bees, bats, or wind.",
+        "marking_scheme": "Award 2 marks for correctly identifying the type of pollination (e.g., bird, bee, bat, wind) based on the flower's shape and structure, and 1 mark for explaining how the flowers' features are suitable for that type of pollination.",
+        "score": "3",
+        "keywords_bank": "shapes and structures, pollination, adaptations, attracting, specific pollinators, birds, bees, bats, wind"
+    },
+    {
+        "question_statement": "Many plants produce fruits to:",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "29",
+        "sub_questions": [],
+        "answer_options": [
+            "protect seed",
+            "produce food for the seed",
+            "store water for the seed germination",
+            "stop seed from germination"
+        ],
+        "correct_answer": "protect seed",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Which part of plant is absent in non-flowering plants?",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "29",
+        "sub_questions": [],
+        "answer_options": [
+            "root",
+            "seed",
+            "fruit",
+            "leaf"
+        ],
+        "correct_answer": "fruit",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Which one of the following is a non-flowering plant?",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "29",
+        "sub_questions": [],
+        "answer_options": [
+            "apple",
+            "rose",
+            "mango",
+            "pine"
+        ],
+        "correct_answer": "pine",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "In the given picture of the flower, which are the female reproductive parts of a flower?",
+        "question_tag": "understand",
+        "image_based_question": "true",
+        "question_image_url": "https://lmsreborn-bookmapping-images.s3.ap-south-1.amazonaws.com/chapter_id_15511_29.1",
+        "question_type": "multiple-choice",
+        "question_page_number": "29",
+        "sub_questions": [],
+        "answer_options": [
+            "B, C and D",
+            "A, B and D",
+            "A, B and C",
+            "A, C and D"
+        ],
+        "correct_answer": "The correct answer will depend on the actual labels in the provided image.",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Which conditions are necessary for seed germination?",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "water, soil, air, darkness",
+            "air, water, light",
+            "water, temperature, air",
+            "temperature, soil, light"
+        ],
+        "correct_answer": "water, temperature, air",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Which profession is associated with plants?",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "zoologist",
+            "dentist",
+            "botanist",
+            "artist"
+        ],
+        "correct_answer": "botanist",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Pollen grains are produced inside the:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "stamen",
+            "carpel",
+            "anther",
+            "petal"
+        ],
+        "correct_answer": "anther",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "In order to attract insects for pollination petals are:",
+        "question_tag": "understand",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "brightly coloured",
+            "many in number",
+            "protected by sepals",
+            "large in size"
+        ],
+        "correct_answer": "brightly coloured",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "In plants water and minerals are taken up by:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "leaves",
+            "stem",
+            "roots",
+            "root hairs"
+        ],
+        "correct_answer": "root hairs",
+        "marking_scheme": null,
+        "score": 1
+    },
+    {
+        "question_statement": "Loss of water from plants in the form water vapour is called:",
+        "question_tag": "remember",
+        "image_based_question": "false",
+        "question_image_url": "",
+        "question_type": "multiple-choice",
+        "question_page_number": "30",
+        "sub_questions": [],
+        "answer_options": [
+            "transpiration",
+            "pollination",
+            "reproduction",
+            "evaporation"
+        ],
+        "correct_answer": "transpiration",
+        "marking_scheme": null,
+        "score": 1
+    }
+]

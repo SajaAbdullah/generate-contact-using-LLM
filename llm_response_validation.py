@@ -1,4 +1,3 @@
-
 import json
 
 
@@ -17,7 +16,7 @@ class GPT4ResponseValidation:
             end_index = response.rfind("]")
             if end_index != -1:
                 # Extract content between [ and ]
-                content_between_brackets = response[start_index: end_index + 1]
+                content_between_brackets = response[start_index : end_index + 1]
                 try:
                     json_response = list(json.loads(content_between_brackets))
                     json_found = True
@@ -43,7 +42,7 @@ class GPT4ResponseValidation:
 
     @classmethod
     def get_images_urls(self, response):
-        """from vision response try to find json array, """
+        """from vision response try to find json array,"""
 
         json_response = []
         # Find the starting index of [
@@ -53,7 +52,7 @@ class GPT4ResponseValidation:
             end_index = response.rfind("]")
             if end_index != -1:
                 # Extract content between [ and ]
-                content_between_brackets = response[start_index: end_index + 1]
+                content_between_brackets = response[start_index : end_index + 1]
                 try:
                     json_response = json.loads(content_between_brackets)
                 except json.JSONDecodeError as e:
@@ -68,19 +67,19 @@ class GPT4ResponseValidation:
 
 GPT4_RESPONSE_VALIDATION = GPT4ResponseValidation
 
-class AWSResponseValidation:
 
+class AWSResponseValidation:
     @classmethod
     def validate_images(cls, height, width):
         """
-            Validates a figure based on its height and width.
+        Validates a figure based on its height and width.
 
-            Parameters:
-                height (float): The height of the figure.
-                width (float): The width of the figure.
-            Returns:
-                bool: True if the figure is valid, False otherwise.
-            """
+        Parameters:
+            height (float): The height of the figure.
+            width (float): The width of the figure.
+        Returns:
+            bool: True if the figure is valid, False otherwise.
+        """
 
         min_height = 0.1
         min_width = 0.1
@@ -91,17 +90,17 @@ class AWSResponseValidation:
 
     @classmethod
     def get_valid_figures_layout(cls, response):
-        blocks = response.get('Blocks', [])
+        blocks = response.get("Blocks", [])
 
         extracted_items = []
         validated_figures = []
         for block in blocks:
-            if block.get('BlockType') == 'LAYOUT_FIGURE':
-                geometry = block.get('Geometry')
-                width = geometry['BoundingBox']['Width']
-                height = geometry['BoundingBox']['Height']
-                left = geometry['BoundingBox']['Left']
-                top = geometry['BoundingBox']['Top']
+            if block.get("BlockType") == "LAYOUT_FIGURE":
+                geometry = block.get("Geometry")
+                width = geometry["BoundingBox"]["Width"]
+                height = geometry["BoundingBox"]["Height"]
+                left = geometry["BoundingBox"]["Left"]
+                top = geometry["BoundingBox"]["Top"]
                 converted_format = (left, top, width, height)
 
                 if cls.validate_images(height, width):
